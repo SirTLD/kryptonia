@@ -1,7 +1,13 @@
-import React from 'react';
+import React from 'react'
+
+import Hero from './components/Hero'
 
 const App = () => {
-  return <div>App</div>;
-};
+  return (
+    <div className='overflow-hidden'>
+      <Hero />
+    </div>
+  )
+}
 
-export default App;
+export default App
