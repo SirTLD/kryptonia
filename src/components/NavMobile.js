@@ -1,7 +1,30 @@
-import React from 'react';
+import React from 'react'
 
-const NavMobile = () => {
-  return <div>NavMobile</div>;
-};
+import { navData } from '../data'
+import { CgClose } from 'react-icons/cg'
 
-export default NavMobile;
+const NavMobile = ({ setNavMobile }) => {
+  return (
+    <nav className='lg:hidden bg-violet h-full top-0 w-80 flex justify-center items-center'>
+      {/* close menu button */}
+      <div
+        onClick={() => setNavMobile(false)}
+        className='absolute top-4 left-4 hover:cursor-pointer cursor-pointer'
+      >
+        <CgClose className='text-3xl' />
+      </div>
+      {/* nav lists */}
+      <ul className='text-xl flex flex-col gap-y-8'>
+        {navData.map((item, index) => {
+          return (
+            <li key={index}>
+              <a href={item.href}>{item.name}</a>
+            </li>
+          )
+        })}
+      </ul>
+    </nav>
+  )
+}
+
+export default NavMobile
