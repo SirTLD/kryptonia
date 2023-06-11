@@ -9,6 +9,8 @@ import Hero from './components/Hero'
 import Stats from './components/Stats'
 import Why from './components/Why'
 import Calculate from './components/Calculate'
+import Trade from './components/Trade'
+import Features from './components/Features'
 
 const App = () => {
   // mobile nav
@@ -17,8 +19,8 @@ const App = () => {
 
   useEffect(() => {
     Aos.init({
-      duration: 2500,
-      delay: 400
+      duration: 1000,
+      delay: 200
     })
   })
 
@@ -37,6 +39,8 @@ const App = () => {
       <Stats />
       <Why />
       <Calculate />
+      <Trade />
+      <Features />
       <div className='h-[2000px]'></div>
     </div>
   )

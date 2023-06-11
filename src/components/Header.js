@@ -17,7 +17,7 @@ const Header = ({ setNavMobile }) => {
       <div className='container mx-auto flex items-center justify-between'>
         {/* logo */}
         <a href='#'>
-          <img src={Kryptonia} alt='logo' />
+          <img className='w-44' src={Kryptonia} alt='logo' />
         </a>
         <div className='hidden lg:flex gap-x-[55px]'>
           <Nav />
