@@ -11,7 +11,6 @@ const Header = ({ setNavMobile }) => {
     <header
       className='py-[30px] lg:pt-[60px]'
       data-aos='fade-down'
-      ß
       data-aos-duration='2000'
     >
       <div className='container mx-auto flex items-center justify-between'>
