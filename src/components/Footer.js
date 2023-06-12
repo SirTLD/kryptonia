@@ -80,7 +80,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>lINK GROUP 1</div>
           </div>
           <div className='flex flex-col flex-1'>
             <div className='lg:ml-[80px]'>
